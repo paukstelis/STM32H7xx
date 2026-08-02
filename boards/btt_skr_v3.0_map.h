@@ -150,8 +150,8 @@
 
 #define AUXINPUT0_PORT              GPIOA                       // Safety door - EXP2 - pin 5
 #define AUXINPUT0_PIN               7
-#define AUXINPUT1_PORT              GPIOC                       // Z probe
-#define AUXINPUT1_PIN               13
+#define AUXINPUT1_PORT              GPIOE                       // Z probe
+#define AUXINPUT1_PIN               5
 #define AUXINPUT2_PORT              GPIOA                       // Reset - EXP2 - pin 7
 #define AUXINPUT2_PIN               4
 #define AUXINPUT3_PORT              GPIOA                       // Feed hold - EXP2 - pin 9
