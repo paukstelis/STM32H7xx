@@ -102,8 +102,8 @@
 #define M4_ENABLE_PIN               13
 #endif
 
-#define AUXOUTPUT0_PORT             GPIOB                       // Spindle PWM - EXP1 - pin 9
-#define AUXOUTPUT0_PIN              0
+#define AUXOUTPUT0_PORT             GPIOC                       // Spindle PWM - EXP1 - pin 9, was B0
+#define AUXOUTPUT0_PIN              13
 #define AUXOUTPUT1_PORT             GPIOB                       // Spindle direction - FAN2
 #define AUXOUTPUT1_PIN              5
 #define AUXOUTPUT2_PORT             GPIOB                       // Spindle enable - FAN1
@@ -131,6 +131,11 @@
 #define SPINDLE_DIRECTION_PIN       AUXOUTPUT1_PIN
 #endif
 
+#if N_SPINDLE > 1
+#define SPINDLE_PWM2_PORT            GPIOE
+#define SPINDLE_PWM2_PIN             6
+#endif
+
 // Define flood and mist coolant enable output pins.
 #if COOLANT_ENABLE & COOLANT_FLOOD
 #define COOLANT_FLOOD_PORT          AUXOUTPUT3_PORT
@@ -150,7 +155,7 @@
 
 #define AUXINPUT0_PORT              GPIOA                       // Safety door - EXP2 - pin 5
 #define AUXINPUT0_PIN               7
-#define AUXINPUT1_PORT              GPIOE                       // Z probe
+#define AUXINPUT1_PORT              GPIOE                       // Z probe was C13
 #define AUXINPUT1_PIN               5
 #define AUXINPUT2_PORT              GPIOA                       // Reset - EXP2 - pin 7
 #define AUXINPUT2_PIN               4
