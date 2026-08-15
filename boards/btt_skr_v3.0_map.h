@@ -159,8 +159,8 @@
 #define AUXINPUT1_PIN               5
 #define AUXINPUT2_PORT              GPIOA                       // Reset - EXP2 - pin 7
 #define AUXINPUT2_PIN               4
-#define AUXINPUT3_PORT              GPIOA                       // Feed hold - EXP2 - pin 9
-#define AUXINPUT3_PIN               5
+#define AUXINPUT3_PORT              GPIOE                       // Feed hold - EXP2 - pin 9
+#define AUXINPUT3_PIN               8
 #define AUXINPUT4_PORT              GPIOA                       // Cycle start - EXP2 - pin 10
 #define AUXINPUT4_PIN               6
 
