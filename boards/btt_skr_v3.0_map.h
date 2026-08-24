@@ -132,8 +132,8 @@
 #endif
 
 #if N_SPINDLE > 1
-#define SPINDLE_PWM2_PORT            GPIOE
-#define SPINDLE_PWM2_PIN             6
+#define SPINDLE_PWM1_PORT            GPIOE
+#define SPINDLE_PWM1_PIN             6
 #endif
 
 // Define flood and mist coolant enable output pins.
